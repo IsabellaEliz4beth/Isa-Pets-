@@ -1,0 +1,404 @@
+
+*{margin:0; padding:0;}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+color:#fff;
+background-color: rgb(136, 4, 66);
+}
+
+.simple_header{
+    padding: 12px 10px;
+    text-align: left;
+    vertical-align: text-top;
+    background-color: #000000;
+    color: rgb(185, 7, 81);
+    font-size: 22px; 
+    float: none;    
+}
+
+.simple_footer{
+    padding: 12px 10px;
+    text-align: left;
+    vertical-align: baseline;
+    background-color: #910c4a;
+    color: rgb(255, 255, 255);
+    font-size: 18px; 
+    float: none;    
+}
+
+.icon_image{
+    position: relative;
+    float: center;
+    padding:0;
+    vertical-align: text-top;
+}
+
+.navbar{
+list-style: none;
+vertical-align: text-top;
+border: 0px solid #bfeaf5;
+float: left;
+}
+
+.navbar li{
+    position: relative;
+    vertical-align: text-top;
+    float: left;
+    border-right: 0px solid #bfeaf5;
+
+}
+
+.navbar li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.navbar li a:hover{
+    background: #333;
+    color: #fff;
+    box-shadow: 0 3px 10px 0 #ccc;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.navbar li ul{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #000000;
+    display: none;
+}
+
+.navbar li:hover ul, .navbar li.over ul{
+    display: block;
+}
+
+.navbar li ul li{
+    border: 0px solid #c0c0c0;
+    display: block;
+    width: 150px;
+    
+}
+
+
+.cont_home_principal{
+    justify-content: center;
+    display: flex;
+    align-items: left;
+    color: #000000;
+}
+
+.cont_home_principal h1{
+    color: #000000;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* slider carousel 1 */
+
+.slider{
+    display: block;
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+
+
+}
+
+.slider li{
+list-style: none;
+position: absolute;
+
+}
+
+.slider img{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input{
+
+    display: none;
+}
+
+.slider label{
+    background-color: #000000;
+    bottom: 10px;
+    cursor:pointer;
+    display: block;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label{
+    left: 10px;
+}
+
+.slider li:nth-child(2) label{
+    left: 40px;
+}
+
+.slider li:nth-child(3) label{
+    left: 70px;
+}
+
+.slider img{
+    opacity:0;
+    visibility: hidden;
+}
+
+.slider li input:checked~img{
+opacity:1;
+visibility: visible;
+z-index:10;
+
+}
+
+
+.container_form {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #000000;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+form textarea {
+	height: 150px;
+	resize: none;
+}
+
+form button {
+	display: block;
+	background-color: #4CAF50;
+	color: #000000;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.carousel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-items {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .carousel-item {
+    flex: 0 0 33.33%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-prev {
+    left: 20px;
+  }
+  
+  .carousel-next {
+    right: 20px;
+  }
+
+ /* Carousel + Album */
+
+/* caroucel */
+.carousel{
+    background-color: #910351;
+    
+    padding-top: 35px;
+    padding-bottom: 35px;
+    
+  }
+  
+  
+  .gallery {
+    background: #c4d5f5;
+  }
+  
+  .gallery-cell{ /* adicionando borda */
+    border-radius: 10px;
+  }
+  
+  .gallery-cell a img{ /* adicionando borda */
+    border-radius: 10px;
+  }
+  
+  .gallery-cell{
+    width: 66%;
+    height: 400px;
+    margin-right: -200px;
+  
+    counter-increment: gallery-cell;
+  }
+  
+  .gallery-cell{
+    width: 66%;
+    height: 400px;
+    margin-right: -200px;
+    
+    counter-increment: gallery-cell;
+  }
+  
+  .gallery-cell{
+    width: 66%;
+    height: 400px;
+    margin-right: -200px;
+    
+    counter-increment: gallery-cell;
+  }
+  
+  .gallery-cell{
+    width: 66%;
+    height: 400px;
+    margin-right: -200px;
+    
+    counter-increment: gallery-cell;
+  }
+  
+  .gallery-cell{
+    width: 66%;
+    height: 400px;
+    margin-right: -200px;
+    
+    counter-increment: gallery-cell;
+  }
+  /* Fim carousel */
+
+  /* Cards de vendas */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #000000;
+  }
+  
+
+  
+  .card h1{
+    padding-top: 10px;
+    height: 80px;
+    
+  }
+  
+  .card h1{
+    font-size: 15px;
+  }
+  
+  
+  .prince-2{
+    color: grey;
+    font-size: 15px;
+    text-decoration:line-through;
+    padding-bottom: 10px;
+  }
+  
+  
+  .price {
+    font-weight: bold;
+    color: #0e84c5;
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+  
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #08527b;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  
+  
+  .card button:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+.video-container {
+ position: relative;
+ padding-bottom: 56.25%;
+ 
+ height: 0%;
+ overflow: hidden;
+}
+  
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+
+}
